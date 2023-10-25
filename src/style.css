@@ -1,0 +1,59 @@
+/* src/style.css */
+
+body {
+  background-color: beige;
+}
+
+#content {
+  background-color: white;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+header {
+  margin-left: 2rem;
+  height: 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+#current {
+  border-bottom: 3px solid #C1C495;
+  padding-bottom: 2px;  
+}
+
+img {
+  width: 100vw;
+  min-width: 350px;
+  max-width: 900px;
+  height: auto;
+}
+
+.about {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 750px;
+  margin: 1.5rem 1rem;
+}
