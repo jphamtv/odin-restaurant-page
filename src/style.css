@@ -7,7 +7,7 @@ body {
 #content {
   background-color: white;
   max-width: 1000px;
-  height: 100vh;
+  height: 150vh;
   margin: 0 auto;
 }
 
@@ -15,9 +15,6 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-
-header {
   margin-left: 2rem;
   height: 5rem;
 }
@@ -39,9 +36,15 @@ li {
   margin-right: 2rem;
 }
 
-#current {
-  border-bottom: 3px solid #C1C495;
-  padding-bottom: 2px;  
+li:hover {
+  text-decoration: 3px underline #c1c495;
+  text-underline-offset: .5rem;
+  cursor: pointer;
+}
+
+.current {
+  text-decoration: 3px underline #c1c495;
+  text-underline-offset: .5rem;
 }
 
 img {
@@ -51,9 +54,32 @@ img {
   height: auto;
 }
 
-.about {
+.about,
+.hours {
   font-size: 1.5rem;
   line-height: 1.5;
   max-width: 750px;
   margin: 1.5rem 1rem;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 5rem;
+  border: none;
+  outline: 1px solid white;
+  outline-offset: -4px;
+  padding: 1rem 2rem;
+  background-color: #c1c495;
+  font-size: 1.5rem;
+  color: white;
 }
