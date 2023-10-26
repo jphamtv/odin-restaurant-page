@@ -1,16 +1,10 @@
 // src/contact.js
 
-const element = document.querySelector('#content');
 
 export default function contactPage() {
-  element.innerHTML = `
-    <header>
-      <ul>
-        <li id="home">Home</li>
-        <li id="menu">Menu</li>
-        <li id="contact" class="current">Contact</li>
-      </ul>
-    </header>
+  const contactContainer = document.createElement('div');
+  contactContainer.classList.add('contact-container');
+  contactContainer.innerHTML = `
     <div class="contact-container">
       <h1>Gentle Crunch Restaurant</h1>
 
@@ -45,5 +39,5 @@ export default function contactPage() {
     </div>
   `;
 
-  return element;
+  return contactContainer;
 }
